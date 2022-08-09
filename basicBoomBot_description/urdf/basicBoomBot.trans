@@ -1,0 +1,48 @@
+<?xml version="1.0" ?>
+<robot name="basicBoomBot" xmlns:xacro="http://www.ros.org/wiki/xacro" >
+
+<transmission name="wheel_fl_joint_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="wheel_fl_joint">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="wheel_fl_joint_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="wheel_bl_joint_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="wheel_bl_joint">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="wheel_bl_joint_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="wheel_br_joint_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="wheel_br_joint">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="wheel_br_joint_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="wheel_fr_joint_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="wheel_fr_joint">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="wheel_fr_joint_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+</robot>
